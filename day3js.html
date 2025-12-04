@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        ol{
+            list-style-type:none;
+            display:flex;
+            flex:wrap wrap;
+        }
+        li,h1{
+            color:white;
+            padding-left:15px;
+        }
+        li{
+            font-size:1.5rem;
+        }
+        nav{
+            display:flex;
+            flex:wrap wrap;
+            justify-content: space-between;
+            padding:10px;  
+            color:white;
+            align-items: center;
+        }
+        video{
+            position:fixed;
+            width:100vw;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            z-index:-1;
+        }
+        p,h3{
+            color:white;
+        }
+        button{
+            margin-top: 10px;
+            padding:10px;
+            border-radius:10px;
+            transition:all 0.3s;
+        }
+        button:hover{
+           letter-spacing:2px;
+           line-height:1.5rem;
+           color: black;
+           background-color: aquamarine;
+           
+        }
+        img{
+            width:30px;
+            height:30px;
+            padding-left:5px;
+            border-radius:50%;
+        }
+       
+        .text{
+            position:fixed;
+            top: 250px;
+            left:20px;
+        }
+        footer{
+            position:fixed;
+            left:20px;
+            bottom:10px;
+        }
+        img:hover{
+            transform:translateY(-5px);
+        }
+    </style-->
+    <!--script>
+       function demo()
+       {
+        /*let a=document.getElementById("t1").value;
+        let b=document.getElementById("t2").value;
+        alert(a+" "+b);*/
+         
+        /*let a=document.getElementById("t1").value;
+        document.getElementById("t2").value=a;*/
+        
+        let a=document.getElementById("t1").value;
+        let b=document.getElementById("t2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        let c=a+b;
+        document.getElementById("t3").value=c;
+       }
+    </script-->
+
+    <!--script>
+        function add()
+        {
+           let a= document.getElementById("t1").value;
+           let b= document.getElementById("t2").value;
+           a=parseInt(a);
+           b=parseInt(b);
+           let c=a+b;
+           document.getElementById("t3").value=c;
+        }
+        function sub()
+        {
+           let a= document.getElementById("t1").value;
+           let b= document.getElementById("t2").value;
+           a=parseInt(a);
+           b=parseInt(b);
+           let c=a-b;
+           document.getElementById("t3").value=c;
+        }
+        function mul()
+        {
+           let a= document.getElementById("t1").value;
+           let b= document.getElementById("t2").value;
+           a=parseInt(a);
+           b=parseInt(b);
+           let c=a*b;
+           document.getElementById("t3").value=c;
+        }
+        function div()
+        {
+           let a= document.getElementById("t1").value;
+           let b= document.getElementById("t2").value;
+           a=parseInt(a);
+           b=parseInt(b);
+           let c=a/b;
+           document.getElementById("t3").value=c;
+        }
+    </script-->
+    
+    <script>
+        function demo(){
+             let selectValue=document.getElementById("sel").value;
+             if (selectValue===""){
+                alert("please select a value")
+             }
+             else{
+                alert("select Value"+" "+selectValue);
+             }
+        }
+    </script>
+</head>
+<!--body>
+    <nav>
+    <h1>Travel</h1>
+    <ol>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Gallery</li>
+    </ol>
+    </nav>
+    <main>
+        <video   src="C:\Users\HP\Downloads\videoplayback.mp4"  controls autoplay loop > 
+        </video>
+    </main>
+    <div class="text">
+       <h3>NEVER STOP</h3>
+       <h1>EXPLORE THE WORLD</h1>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit voluptatem odio dicta harum sint sunt mollitia eligendi, incidunt vel error! Totam consequuntur possimus fugiat recusandae maxime sequi qui, amet quis fuga maiores ex, soluta animi cupiditate quasi harum provident fugit, quidem eos? Porro labore, nihil accusamus voluptatem, eos eius animi quas adipisci doloremque ipsa dignissimos praesentium voluptas magnam id, enim error earum repellendus omnis nisi repellat consectetur. Nihil provident magni, aspernatur laboriosam at eius totam alias et sed tempore ad beatae maiores harum accusamus, velit tempora fugit molestias nemo odit temporibus. Obcaecati quo velit nesciunt quia recusandae? Culpa, in?</p>
+       <button class="button">Explore</button>
+    </div>
+       
+        <footer>
+            <ol>
+                <li><img src="C:\Users\HP\Downloads\facebook logo.jpg" alt=""></li>
+                <li><img src="C:\Users\HP\Downloads\insta logo.jpg" alt=""></li>
+            </ol>
+        </footer>
+</body-->
+
+<body>
+    <!--input type="text" placeholder="Enter Your Name" id="t1">
+    <input type="text" placeholder="Enter Your Name" id="t2"-->
+
+    <!--input type="number" placeholder="Enter First Number" id="t1">
+    <input type="number" placeholder="Enter Second Number" id="t2">
+    <input type="number" placeholder="Answer" id="t3"-->
+    <!--button onclick="demo()">Click Me</button-->
+    <!--button onclick="add()">Add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">mul</button>
+    <button onclick="div()">div</button-->
+    <select name="" id="sel">
+    <option value="">Select Sports</option>
+    <option value="Cricket">Cricket</option>
+    <option value="Volley Ball">Volley Ball</option>
+    <option value="Boxing">Boxing</option>
+    </select>
+    <button onclick="demo()">Click Me</button>
+</body>
+</html>
